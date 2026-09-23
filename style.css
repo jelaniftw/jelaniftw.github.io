@@ -1,0 +1,69 @@
+/* Bag to Belt — website. Fonts are served from this site: no third-party requests. */
+@font-face { font-family: 'Archivo'; font-weight: 400; font-display: swap; src: url(fonts/archivo-latin-400-normal.woff2) format('woff2'); }
+@font-face { font-family: 'Archivo'; font-weight: 700; font-display: swap; src: url(fonts/archivo-latin-700-normal.woff2) format('woff2'); }
+@font-face { font-family: 'Big Shoulders Display'; font-weight: 900; font-display: swap; src: url(fonts/big-shoulders-display-latin-900-normal.woff2) format('woff2'); }
+
+:root {
+  --ink: #0d1020;
+  --panel: #171c37;
+  --line: #2d3561;
+  --text: #f3efe6;
+  --muted: #a3aac8;
+  --gold: #f7b93e;
+  --red: #ff4f3f;
+  --display: 'Big Shoulders Display', Impact, 'Arial Narrow', sans-serif;
+  --ui: 'Archivo', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: radial-gradient(1100px 600px at 50% -10%, #222b5e 0%, transparent 60%), var(--ink);
+  color: var(--text);
+  font: 17px/1.6 var(--ui);
+}
+a { color: var(--gold); text-underline-offset: 3px; }
+a:hover { color: #ffd27a; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+
+header.top { padding: 20px 0; }
+header.top .wrap { display: flex; align-items: center; gap: 12px; }
+header.top img { width: 40px; height: 40px; border-radius: 10px; }
+header.top a.brand { color: var(--text); text-decoration: none; font: 900 26px/1 var(--display); text-transform: uppercase; letter-spacing: .02em; }
+header.top nav { margin-left: auto; display: flex; gap: 18px; font-size: 15px; }
+header.top nav a { color: var(--muted); text-decoration: none; }
+header.top nav a:hover, header.top nav a[aria-current] { color: var(--text); }
+
+.hero { text-align: center; padding: 40px 0 24px; }
+.hero img { width: 148px; height: 148px; border-radius: 34px; box-shadow: 0 20px 60px rgba(0,0,0,.55); }
+.hero h1 { font: 900 clamp(48px, 11vw, 84px)/.9 var(--display); text-transform: uppercase; margin: 26px 0 8px; letter-spacing: .01em; text-shadow: 0 6px 0 #070914; }
+.hero .sub { color: var(--gold); font-weight: 700; letter-spacing: .22em; text-transform: uppercase; font-size: 14px; }
+.hero p.lead { color: var(--muted); max-width: 520px; margin: 22px auto 0; font-size: 18px; }
+.soon { display: inline-block; margin-top: 26px; padding: 12px 22px; border-radius: 14px; background: var(--gold); color: #1a1406; font-weight: 700; }
+
+.features { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 14px; margin: 36px 0 20px; }
+.features div { background: var(--panel); border: 1px solid var(--line); border-radius: 18px; padding: 18px 18px 16px; }
+.features b { display: block; font: 900 24px/1 var(--display); text-transform: uppercase; margin-bottom: 6px; }
+.features span { color: var(--muted); font-size: 15px; }
+
+main.doc { padding: 16px 0 40px; }
+main.doc h1 { font: 900 clamp(40px, 9vw, 64px)/.95 var(--display); text-transform: uppercase; margin: 16px 0 6px; }
+main.doc h2 { font: 900 28px/1.05 var(--display); text-transform: uppercase; margin: 36px 0 8px; letter-spacing: .01em; }
+main.doc h3 { font-size: 17px; margin: 22px 0 4px; }
+main.doc .date { color: var(--muted); font-size: 15px; margin: 0 0 20px; }
+main.doc ul { padding-left: 22px; }
+main.doc li { margin: 4px 0; }
+.box { background: var(--panel); border: 1px solid var(--line); border-radius: 18px; padding: 6px 20px; margin: 18px 0; }
+.lang { margin: 8px 0 0; font-size: 15px; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 48px 0 8px; }
+
+footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 22px 0 40px; color: var(--muted); font-size: 14px; }
+footer .wrap { display: flex; flex-wrap: wrap; gap: 8px 20px; }
+footer a { color: var(--muted); }
+footer .copy { margin-left: auto; }
+@media (max-width: 540px) {
+  header.top nav { gap: 12px; font-size: 14px; }
+  header.top a.brand { font-size: 22px; }
+  footer .copy { margin-left: 0; width: 100%; }
+}
