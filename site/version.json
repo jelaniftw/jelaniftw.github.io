@@ -1,13 +1,13 @@
 {
-  "version": "0.21.1",
-  "build": 83,
+  "version": "1.0.0",
+  "build": 84,
   "minBuild": 82,
   "notes": [
-    "Every player name is unique now: if yours is already taken, you pick a new one",
-    "Fairer prop challenges: the loss limits are checked just as closely while the app is in the background",
+    "Your first prop firm challenge is free, no ad needed",
+    "Join the Chart Life Discord from your phone or the leaderboard",
     "Fixes and small improvements"
   ],
-  "ios": "",
+  "ios": "https://apps.apple.com/app/id6830179831",
   "android": "",
   "built": "2026-11-03"
 }
